@@ -114,3 +114,6 @@ def handle_jira_api_error(error: ApiError, message: str = "") -> Mapping[str, st
         return {"error_message": f"User lacks permissions{message}."}
 
     return None
+
+def handle_jira_project_change(integration, data):
+    pass
